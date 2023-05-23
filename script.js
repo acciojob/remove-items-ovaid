@@ -2,9 +2,7 @@
 
  function deleteElement() {
   var selectElement = document.getElementById("colorSelect");
-  var selectedOption = selectElement.options[selectElement.selectedIndex];
-  
-  if (selectedOption) {
+  var selectedOption = document.getElementsByTagName("option")[0];
+
     selectElement.removeChild(selectedOption);
-  }
 }
