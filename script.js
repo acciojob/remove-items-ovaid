@@ -2,6 +2,9 @@
 
  function deleteElement() {
   var selectElement = document.getElementById("colorSelect");
-  var selectChildren = selectElement.children[0];
-	 selectChildren.remove();
+  var selectedOption = selectElement.options[selectElement.selectedIndex];
+  
+  if (selectedOption) {
+    selectElement.removeChild(selectedOption);
+  }
 }
